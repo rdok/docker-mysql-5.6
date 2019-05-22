@@ -6,5 +6,7 @@ services:
     ports:
       - 5000:3306
     container_name: db
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
     volumes:
       - ./data:/var/lib/mysql

@@ -1,3 +1,3 @@
-CREATE USER 'root'@'%' IDENTIFIED BY 'secret';
+CREATE USER 'root'@'localhost' IDENTIFIED BY 'secret';
 
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
