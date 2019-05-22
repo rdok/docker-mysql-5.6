@@ -8,5 +8,6 @@ services:
     container_name: db
     environment:
       - MYSQL_ROOT_PASSWORD=secret
-    volumes:
-      - ./data:/var/lib/mysql
+#    volumes:
+#      - ./lib:/var/lib/mysql
+#      - ./log:/var/log/mysql
