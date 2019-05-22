@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  database:
+    container_name: mysql:5.7
+    image: datajoint/mysql
+    ports:
+      - ${MYSQL_PORT}:3306
+    volumes:
+      - ./data:/var/lib/mysql
