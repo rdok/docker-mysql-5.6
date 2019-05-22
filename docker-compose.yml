@@ -2,9 +2,9 @@ version: '3'
 
 services:
   database:
-    container_name: mysql:5.7
-    image: datajoint/mysql
+    build: .
     ports:
-      - ${MYSQL_PORT}:3306
+      - 5000:3306
+    container_name: db
     volumes:
       - ./data:/var/lib/mysql
